@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Phone Silencer</string>
+    <string name="enable_silencer">Enable Silencer</string>
+    <string name="disable_silencer">Disable Silencer</string>
+    <string name="status_enabled">Silencer is enabled</string>
+    <string name="status_disabled">Silencer is disabled</string>
+    <string name="schedule_info">Phone will be set to vibrate at 9:00 AM and loud at 5:00 PM (Budapest time) on workdays (Mon-Thu)</string>
+    <string name="manual_vibrate">Set to Vibrate</string>
+    <string name="manual_loud">Set to Loud</string>
+    <string name="current_mode">Current mode: %s</string>
+    <string name="mode_normal">Normal</string>
+    <string name="mode_vibrate">Vibrate</string>
+    <string name="mode_silent">Silent</string>
+    <string name="permission_required">Audio permission required</string>
+    <string name="permission_explanation">This app needs permission to change your phone\'s ringer mode.</string>
+</resources>
