@@ -1,56 +1,39 @@
-# Android/IntelliJ
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+.npm
 
-# Android Studio 3.6+ serialized cache file
-.idea/caches/build_file_checksums.ser
+# Environment variables
+.env
 
-# Android specific
-app/build/
+# Database files
+*.db
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+.clang_complete
+.gcc-flags.json
+
+# Build artifacts
 build/
-*.ap_
-*.dex
-*.class
+*.pyc
 
-# Log Files
-*.log
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Windows
-Thumbs.db
-
-# OSX
+# IDE
 .DS_Store
-
-# Gradle
-.gradle/
-gradle-app.setting
-!gradle-wrapper.jar
-
-# NDK
-obj/
-
-# Intellij IDEA
+.vscode/
 .idea/
+*.iml
 *.iws
 /out/
 
-# VS Code
-.vscode/
+# Logs
+*.log
 
-# Signing files
-.signing/
+# OS generated files
+Thumbs.db
+.DS_Store

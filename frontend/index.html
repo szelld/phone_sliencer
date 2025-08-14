@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart House Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Container -->
+    <div id="login-container" class="login-container">
+        <form id="login-form" class="login-form">
+            <h2>Smart House Login</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn" id="login-btn">Login</button>
+            <div id="login-error" class="error-message hidden"></div>
+        </form>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="dashboard" class="dashboard container">
+        <header class="header">
+            <h1>🏠 Smart House Dashboard</h1>
+            <div class="user-info">
+                <div class="connection-status">
+                    <span class="status-indicator" id="connection-indicator"></span>
+                    <span id="connection-text">Disconnected</span>
+                </div>
+                <button class="logout-btn" id="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="floorplan-container">
+                <h2>Floor Plan</h2>
+                <div id="floorplan-wrapper">
+                    <!-- SVG will be loaded here -->
+                </div>
+            </div>
+
+            <div class="control-panel">
+                <!-- Sensor Data -->
+                <div class="control-section">
+                    <h3>🌡️ Sensors</h3>
+                    <div class="sensor-grid">
+                        <div class="sensor-card">
+                            <div class="sensor-value" id="temperature-value">--</div>
+                            <div class="sensor-label">Temperature (°C)</div>
+                        </div>
+                        <div class="sensor-card">
+                            <div class="sensor-value" id="humidity-value">--</div>
+                            <div class="sensor-label">Humidity (%)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan Controls -->
+                <div class="control-section">
+                    <h3>💨 Fan Control</h3>
+                    <div class="fan-status">
+                        <span class="fan-indicator" id="fan-indicator"></span>
+                        <span id="fan-status-text">Off</span>
+                        <span class="mode-badge" id="fan-mode">Manual</span>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="btn btn-success" id="fan-auto-btn">Auto Mode</button>
+                        <button class="btn btn-primary" id="fan-on-btn">Manual On</button>
+                        <button class="btn btn-warning" id="fan-off-btn">Manual Off</button>
+                    </div>
+                </div>
+
+                <!-- Lock Controls -->
+                <div class="control-section">
+                    <h3>🔒 Door Lock</h3>
+                    <div class="lock-status">
+                        <span class="lock-indicator" id="lock-indicator">🔒</span>
+                        <span id="lock-status-text">Locked</span>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="btn btn-danger" id="lock-btn">Lock</button>
+                        <button class="btn btn-success" id="unlock-btn">Unlock</button>
+                    </div>
+                </div>
+
+                <!-- Climate Settings -->
+                <div class="control-section">
+                    <h3>⚙️ Climate Settings</h3>
+                    <div class="form-group">
+                        <label for="temp-threshold">Temp Threshold (°C):</label>
+                        <input type="number" id="temp-threshold" step="0.5" min="15" max="35">
+                    </div>
+                    <div class="form-group">
+                        <label for="humidity-threshold">Humidity Threshold (%):</label>
+                        <input type="number" id="humidity-threshold" step="1" min="30" max="90">
+                    </div>
+                    <div class="control-buttons">
+                        <button class="btn btn-primary" id="update-thresholds-btn">Update</button>
+                    </div>
+                </div>
+
+                <!-- Event Log -->
+                <div class="control-section">
+                    <h3>📋 Event Log</h3>
+                    <div class="event-log" id="event-log">
+                        <div class="text-center">Loading events...</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

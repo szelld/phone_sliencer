@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Floor plan background -->
+  <rect width="800" height="600" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
+  
+  <!-- Living Room -->
+  <rect x="50" y="50" width="300" height="200" fill="#e6f3ff" stroke="#333" stroke-width="2" 
+        data-light="light_living" class="room" id="living-room"/>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">
+    Living Room
+  </text>
+  
+  <!-- Kitchen -->
+  <rect x="400" y="50" width="300" height="200" fill="#ffe6e6" stroke="#333" stroke-width="2" 
+        data-light="light_kitchen" class="room" id="kitchen"/>
+  <text x="550" y="150" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">
+    Kitchen
+  </text>
+  
+  <!-- Bedroom -->
+  <rect x="50" y="300" width="300" height="200" fill="#e6ffe6" stroke="#333" stroke-width="2" 
+        data-light="light_bedroom" class="room" id="bedroom"/>
+  <text x="200" y="400" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">
+    Bedroom
+  </text>
+  
+  <!-- Hall -->
+  <rect x="400" y="300" width="300" height="200" fill="#fff3e6" stroke="#333" stroke-width="2" 
+        data-light="light_hall" class="room" id="hall"/>
+  <text x="550" y="400" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">
+    Hall
+  </text>
+  
+  <!-- Door indicators -->
+  <rect x="200" y="250" width="50" height="10" fill="#8b4513"/>
+  <text x="225" y="270" text-anchor="middle" font-family="Arial" font-size="10">Door</text>
+  
+  <!-- Light bulb icons (will be styled via CSS) -->
+  <circle cx="200" cy="100" r="8" class="light-indicator" data-light="light_living" fill="#ffff99"/>
+  <circle cx="550" cy="100" r="8" class="light-indicator" data-light="light_kitchen" fill="#ffff99"/>
+  <circle cx="200" cy="350" r="8" class="light-indicator" data-light="light_bedroom" fill="#ffff99"/>
+  <circle cx="550" cy="350" r="8" class="light-indicator" data-light="light_hall" fill="#ffff99"/>
+  
+  <!-- Fan location (in living room) -->
+  <circle cx="150" cy="120" r="15" fill="#cccccc" stroke="#666" stroke-width="2"/>
+  <text x="150" y="125" text-anchor="middle" font-family="Arial" font-size="8">FAN</text>
+  
+  <!-- Lock location (at door) -->
+  <rect x="220" y="245" width="10" height="20" fill="#888" stroke="#333" stroke-width="1"/>
+  <text x="225" y="290" text-anchor="middle" font-family="Arial" font-size="8">LOCK</text>
+</svg>
